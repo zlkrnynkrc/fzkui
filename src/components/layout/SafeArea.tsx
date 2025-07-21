@@ -23,4 +23,4 @@ const SafeArea: React.FC<BoxProps> = ({
   return <div className={classes}>{children}</div>;
 };
 
-export default SafeArea;
+export { SafeArea };

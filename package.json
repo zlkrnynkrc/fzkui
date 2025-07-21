@@ -10,33 +10,46 @@
   ],
   "license": "ISC",
   "author": "Zülkarneyn Karaüce",
-  "main": "dist/fzkui.umd.js", 
-  "module": "dist/fzkui.es.js",  
-  "types": "dist/types/index.d.ts", 
-  "files": ["dist"], 
+  "main": "dist/fzkui.umd.js",
+  "module": "dist/fzkui.es.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/fzkui.es.js",
+      "require": "./dist/fzkui.umd.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./*": {
+      "import": "./dist/*.js",
+      "types": "./dist/types/*.d.ts"
+    }
+  },
   "scripts": {
-    "build": "vite build",   
+    "build": "vite build",
     "test": "echo 'Testler burada çalışır'",
     "prepare": "npm run build"
   },
   "peerDependencies": {
+    "clsx": "^2.0.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "clsx": "^2.0.0", 
-    "tailwind-merge": "^2.0.0", 
-    "lucide-react": "^0.525.0" 
+    "tailwind-merge": "^2.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.6",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-typescript": "^12.1.4",
-    "@types/react": "^19.1.0",  
-    "@types/react-dom": "^19.1.0", 
-    "@vitejs/plugin-react-swc": "^3.7.0",
+    "@types/node": "^24.0.15",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react-swc": "^3.11.0",
     "rollup": "^4.45.1",
-    "rollup-plugin-dts": "^6.2.1",  
+    "rollup-plugin-dts": "^6.2.1",
     "typescript": "^5.8.3",
-    "vite": "^5.0.0", 
-    "vite-plugin-dts": "^3.9.1" 
+    "vite": "^5.0.0",
+    "vite-plugin-dts": "^3.9.1"
   }
 }

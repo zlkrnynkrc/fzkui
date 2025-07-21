@@ -26,4 +26,4 @@ const GridView: React.FC<GridViewProps> = ({
   return <div className={classes}>{children}</div>;
 };
 
-export default GridView;
+export { GridView };

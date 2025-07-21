@@ -23,4 +23,4 @@ const Scroll: React.FC<BoxProps> = ({
   return <div className={classes}>{children}</div>;
 };
 
-export default Scroll;
+export { Scroll };

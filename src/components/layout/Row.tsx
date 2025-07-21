@@ -28,4 +28,4 @@ const Row: React.FC<FlexLayoutProps> = ({
   return <div className={classes}>{children}</div>;
 };
 
-export default Row;
+export { Row };

@@ -28,4 +28,4 @@ const Expanded: React.FC<ExpandedProps> = ({
   return <div className={classes}>{children}</div>;
 };
 
-export default Expanded;
+export { Expanded };

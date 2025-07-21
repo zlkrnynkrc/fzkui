@@ -31,4 +31,4 @@ const Fab: React.FC<FabProps> = ({
   );
 };
 
-export default Fab;
+export { Fab };

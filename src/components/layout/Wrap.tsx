@@ -28,4 +28,4 @@ const Wrap: React.FC<FlexLayoutProps> = ({
   return <div className={classes}>{children}</div>;
 };
 
-export default Wrap;
+export { Wrap };

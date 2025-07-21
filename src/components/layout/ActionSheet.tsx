@@ -65,4 +65,4 @@ const ActionSheet: React.FC<ActionSheetProps> = ({
   );
 };
 
-export default ActionSheet;
+export { ActionSheet };

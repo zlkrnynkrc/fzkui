@@ -1,8 +1,8 @@
 import React from "react";
 import { cn } from "../../lib/utils";
 import { ListViewProps, Width } from "./types";
-import Col from "./Col";
-import Scroll from "./Scroll";
+import { Col } from "./Col";
+import { Scroll } from "./Scroll";
 
 const ListView: React.FC<ListViewProps> = ({
   children,
@@ -28,4 +28,4 @@ const ListView: React.FC<ListViewProps> = ({
   );
 };
 
-export default ListView;
+export { ListView };

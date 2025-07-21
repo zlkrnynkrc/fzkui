@@ -28,4 +28,4 @@ const Col: React.FC<FlexLayoutProps> = ({
   return <div className={classes}>{children}</div>;
 };
 
-export default Col;
+export { Col };

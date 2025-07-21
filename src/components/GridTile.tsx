@@ -1,7 +1,7 @@
 import React from "react";
 import { cn } from "../lib/utils";
 import { LayoutProps } from "./layout/types";
-import Expanded from "./layout/Expanded";
+import { Expanded } from "./layout/Expanded";
 import { Card, CardContent, CardFooter, CardHeader } from "./Card";
 
 interface GridTileProps extends LayoutProps {
@@ -43,4 +43,4 @@ const GridTile: React.FC<GridTileProps> = ({
   );
 };
 
-export default GridTile;
+export { GridTile };

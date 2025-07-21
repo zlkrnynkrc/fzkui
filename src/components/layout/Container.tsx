@@ -23,4 +23,4 @@ const Container: React.FC<BoxProps> = ({
   return <div className={classes}>{children}</div>;
 };
 
-export default Container;
+export { Container };

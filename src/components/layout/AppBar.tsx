@@ -39,4 +39,4 @@ const AppBar: React.FC<AppBarProps> = ({
   );
 };
 
-export default AppBar;
+export { AppBar };

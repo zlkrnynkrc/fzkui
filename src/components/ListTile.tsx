@@ -1,7 +1,7 @@
 import React from "react";
 import { cn } from "../lib/utils";
 import { LayoutProps } from "./layout/types";
-import Expanded from "./layout/Expanded";
+import { Expanded } from "./layout/Expanded";
 
 interface ListTileProps extends LayoutProps {
   leading?: React.ReactNode;
@@ -40,4 +40,4 @@ const ListTile: React.FC<ListTileProps> = ({
   );
 };
 
-export default ListTile;
+export { ListTile };

@@ -1,7 +1,7 @@
 import React from "react";
 import { cn } from "../../lib/utils";
 import { BottomAppBarProps, Width } from "./types";
-import Row from "./Row";
+import { Row } from "./Row";
 
 const BottomAppBar: React.FC<BottomAppBarProps> = ({
   children,
@@ -28,4 +28,4 @@ const BottomAppBar: React.FC<BottomAppBarProps> = ({
   );
 };
 
-export default BottomAppBar;
+export { BottomAppBar };

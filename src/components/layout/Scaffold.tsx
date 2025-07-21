@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { cn } from "../../lib/utils";
 import { ScaffoldProps } from "./types";
-import SafeArea from "./SafeArea";
+import { SafeArea } from "./SafeArea";
 
 const DEFAULT_BAR_HEIGHT_PX = 64;
 
@@ -81,4 +81,4 @@ const Scaffold: React.FC<ScaffoldProps> = ({
   );
 };
 
-export default Scaffold;
+export { Scaffold };
