@@ -1,0 +1,42 @@
+{
+  "name": "fzkui",
+  "version": "1.0.0",
+  "description": "Simple components for mobile,web",
+  "keywords": [
+    "ui",
+    "react",
+    "capacitor",
+    "mobile"
+  ],
+  "license": "ISC",
+  "author": "Zülkarneyn Karaüce",
+  "main": "dist/fzkui.umd.js", 
+  "module": "dist/fzkui.es.js",  
+  "types": "dist/types/index.d.ts", 
+  "files": ["dist"], 
+  "scripts": {
+    "build": "vite build",   
+    "test": "echo 'Testler burada çalışır'",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "clsx": "^2.0.0", 
+    "tailwind-merge": "^2.0.0", 
+    "lucide-react": "^0.525.0" 
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.4",
+    "@types/react": "^19.1.0",  
+    "@types/react-dom": "^19.1.0", 
+    "@vitejs/plugin-react-swc": "^3.7.0",
+    "rollup": "^4.45.1",
+    "rollup-plugin-dts": "^6.2.1",  
+    "typescript": "^5.8.3",
+    "vite": "^5.0.0", 
+    "vite-plugin-dts": "^3.9.1" 
+  }
+}
